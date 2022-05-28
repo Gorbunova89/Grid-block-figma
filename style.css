@@ -1,4 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 3px solid blue;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 1219px) 1fr;
+     /* 12 колонок по 1 фракции */
+     /* grid-template-columns: repeat(12, 1fr); */
+     /* column-gap: 8px; */
+    justify-content: center;
+}
+
+.row {
+    border: 3px solid blueviolet;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(12, 1fr);
+    /* отступы между столбцами */
+    grid-column-gap: 8px;
+    /* отступы между строками */
+    /* grid-row-gap: 8px; */
+    /* размер строки */
+    grid-auto-rows: 32px;
+}
+
 .block {
+   
     margin: 8px 0;
     padding: 32px;
     text-align: center;
